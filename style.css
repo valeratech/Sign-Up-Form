@@ -30,30 +30,36 @@ aside {
     grid-row: 1 / -1;
     background-image: url("/home/administrator/Odin/Sign-Up-Form/placeholder.jpg");
     background-size: cover;
-}
-
-.container-header {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.container-header {
+    position: relative;
+
+}
+
 .main-header {
-    font-size: 38px;
+    font-size: 44px;
     color: lavender;
+    /*-webkit-text-stroke-width: 1px;*/
+    /*-webkit-text-stroke-color: black;*/
     text-transform: uppercase;
-    letter-spacing: 15px;
-    outline: 3px solid #969696;
-    outline-offset: .25em;
+    letter-spacing: 8px;
+    /*outline: 3px solid #d8d8d8;*/
+    /*outline-offset: .25em;*/
     display: inline-block;
-    margin: 0.25em 0 0.5em;
-    color: #969696
+    color: #d8d8d8;
+    text-shadow: 1px 1px 1px #929292;
+    background: rgba(0,0,0,0.5);
+    padding: 40px 0;
+    margin-bottom: 200px;
 }
 
 
 .top {
-    padding: 100px 100px 40px 30px;
+    padding: 100px 100px 30px 50px;
     background-color: #f6faff;
 
 }
@@ -68,7 +74,7 @@ aside {
 .middle {
     position: relative;
     grid-column: 2 / 3;
-    padding: 30px;
+    padding: 50px;
     box-shadow: 0 4px 20px -2px gray;
 
 }
@@ -76,7 +82,7 @@ aside {
 
 .bottom {
     grid-column: 2 / 3;
-    padding: 30px;
+    padding: 50px;
     background-color: #f6faff;
     margin-top: 1px;
 
