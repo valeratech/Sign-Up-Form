@@ -2,9 +2,76 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /*border-style: solid;*/
+}
+
+body {
+    background-color: #000000;
+    font-family: sans-serif;
 }
 
 .master {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .9fr 1.1fr;
+    grid-template-rows: 1fr 1fr 500px;
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.top > h2 {
+    margin-bottom: 30px;
+    line-height: 1.4em;
+    font-weight: 550;
+}
+
+aside {
+    grid-row: 1 / -1;
+    background-image: url("/home/administrator/Odin/Sign-Up-Form/placeholder.jpg");
+    background-size: cover;
+
+}
+
+.top {
+    padding: 100px 100px 40px 30px;
+    background-color: #f6faff;
+
+}
+
+
+.col-one, .col-two {
+    margin-right: 80px;
+    margin-top: 30px;
+
+}
+
+.middle {
+    position: relative;
+    grid-column: 2 / 3;
+    padding: 30px;
+    box-shadow: 0 4px 20px -2px gray;
+
+}
+
+
+.bottom {
+    grid-column: 2 / 3;
+    padding: 30px;
+    background-color: #f6faff;
+    margin-top: 1px;
+
+}
+
+form {
+    display: flex;
+}
+
+input, label {
+    display: block;
+    text-transform: uppercase;
+
+}
+
+input {
+    margin-bottom: 15px;
 }
