@@ -12,11 +12,12 @@ body {
 
 .master {
     display: grid;
-    grid-template-columns: .9fr 1.1fr;
-    grid-template-rows: 1fr 1fr 500px;
+    grid-template-columns: 1fr minmax(0, 2fr);
+    grid-template-rows: 1fr 1fr 1fr;
     background-color: white;
     width: 70%;
     margin: 0 auto;
+
 }
 
 .top > h2 {
@@ -29,8 +30,27 @@ aside {
     grid-row: 1 / -1;
     background-image: url("/home/administrator/Odin/Sign-Up-Form/placeholder.jpg");
     background-size: cover;
-
 }
+
+.container-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header {
+    font-size: 38px;
+    color: lavender;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    outline: 3px solid #969696;
+    outline-offset: .25em;
+    display: inline-block;
+    margin: 0.25em 0 0.5em;
+    color: #969696
+}
+
 
 .top {
     padding: 100px 100px 40px 30px;
@@ -64,6 +84,7 @@ aside {
 
 form {
     display: flex;
+    flex-flow: wrap;
 }
 
 input, label {
