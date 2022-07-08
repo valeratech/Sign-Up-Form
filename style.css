@@ -82,13 +82,12 @@ header {
     position: relative;
     grid-column: 2 / 3;
     padding: 20px 0 30px 50px;
-    box-shadow: 0 4px 20px -2px gray;
+    box-shadow: 0 10px 30px -6px gray;
 
 }
 
 .middle > h2 {
     font-size: 32px;
-
 }
 
 .bottom {
@@ -125,8 +124,35 @@ input:focus {
     background-color: aliceblue;
 }
 
+/*input + span {*/
+/*    position: relative;*/
+/*}*/
+
+input:invalid:required {
+    border-color: red;
+}
+
 input + span {
     position: relative;
+}
+
+input:valid + span::after {
+    font-size: 2.5rem;
+    position: absolute;
+    content: '✓';
+    color: green;
+    padding: 5px 10px;
+    top: -70px;
+    right: -330px;
+}
+
+.abs::after {
+    font-size: 16px;
+    position: absolute;
+    content: '(optional)';
+    padding: 5px 10px;
+    top: 215px;
+    right: 126px;
 }
 
 button {
@@ -146,5 +172,7 @@ button:hover {
 
 button:active {
     background-color: #ff1d95;
+    outline: 2px solid #ff1d95;
+    outline-offset: 2px;
 }
 
