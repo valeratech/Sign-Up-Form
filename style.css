@@ -26,6 +26,10 @@ body {
 
 }
 
+.middle > h2 {
+    margin-bottom: 20px;
+}
+
 header {
     grid-row: 1 / -1;
     background-image: url("/home/administrator/Odin/Sign-Up-Form/placeholder.jpg");
