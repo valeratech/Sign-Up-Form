@@ -8,9 +8,9 @@
 </head>
 <body>
     <main class="master">
-        <aside>
+        <header>
             <h1 class="main-header">imstylinonyou</h1>
-        </aside>
+        </header>
         <article class="top">
             <h2>Welcome to entertainment in its purest form as I offer luxury accommodations in contemporary savage
             designs. This website's sleek, tasteful architecture combines aesthetic wonders with modern taste and
@@ -19,35 +19,36 @@
             <h2>In other words - I AM the best.</h2>
         </article>
         <article class = "middle">
-            <h2>Level up today!</h2>
+            <h2>Level up your life!</h2>
             <form id="my-form" action="#" method="post">
                 <div class="col-one">
                     <p>
                         <label for="first">first name</label>
-                        <input id="first">
+                        <input type="text" id="first" name="first" required>
                     </p>
                     <p>
-                        <label>email</label>
-                        <input>
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email">
                     </p>
                     <p>
-                        <label>password</label>
-                        <input>
+                        <label for="password">password</label>
+                        <input type="password" id="password" name="password" required>
                     </p>
                 </div>
                 <div class="col-two">
                     <p>
-                    <label for="last">last name</label>
-                    <input id="last">
+                        <label for="last">last name</label>
+                        <input type="last" id="last" name="last" required>
                     </p>
                     <p>
-                        <label for="phone"l>phone number</label>
-                        <input id="phone">
+                        <label for="phone">phone number</label>
+                        <input type="tel" id="phone" name="phone" required>
                     </p>
                     <p>
                         <label for="confirm">confirm password</label>
-                        <input id="confirm">
+                        <input type="password" id="confirm" name="confirmPass" required>
                     </p>
+                </div>
             </form>
         </article>
         <article class="bottom">

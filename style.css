@@ -12,21 +12,21 @@ body {
 
 .master {
     display: grid;
-    grid-template-columns: 1fr minmax(0, 2fr);
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1.2fr minmax(0, 2fr);
+    grid-template-rows: 1fr  fit-content(100%) 1.2fr;
     background-color: white;
     width: 70%;
     margin: 0 auto;
-
 }
 
 .top > h2 {
     margin-bottom: 30px;
-    line-height: 1.4em;
-    font-weight: 550;
+    line-height: 1.3em;
+    font-weight: 500;
+
 }
 
-aside {
+header {
     grid-row: 1 / -1;
     background-image: url("/home/administrator/Odin/Sign-Up-Form/placeholder.jpg");
     background-size: cover;
@@ -55,12 +55,15 @@ aside {
     background: rgba(0,0,0,0.5);
     padding: 40px 0;
     margin-bottom: 200px;
+    width: 100%;
+    text-align: center;
 }
 
 
 .top {
     padding: 100px 100px 30px 50px;
     background-color: #f6faff;
+
 
 }
 
@@ -74,11 +77,15 @@ aside {
 .middle {
     position: relative;
     grid-column: 2 / 3;
-    padding: 50px;
+    padding: 20px 0 30px 50px;
     box-shadow: 0 4px 20px -2px gray;
 
 }
 
+.middle > h2 {
+    font-size: 32px;
+
+}
 
 .bottom {
     grid-column: 2 / 3;
@@ -95,10 +102,45 @@ form {
 
 input, label {
     display: block;
-    text-transform: uppercase;
+}
 
+label {
+    text-transform: uppercase;
 }
 
 input {
     margin-bottom: 15px;
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+    width: 275px;
+    height: 35px;
+    font-size: 20px;
 }
+
+input:focus {
+    background-color: aliceblue;
+}
+
+input + span {
+    position: relative;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #f7f7f7;
+    background-color: #ff1d95;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 25px;
+}
+
+button:hover {
+    padding: 12px 22px;
+    background-color: #ce4388;
+}
+
+button:active {
+    background-color: #ff1d95;
+}
+
