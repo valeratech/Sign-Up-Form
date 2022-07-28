@@ -147,7 +147,7 @@ input + span {
 }
 
 
-input:valid + span::after {
+input:valid:required + span::after {
     font-size: 1.8rem;
     position: absolute;
     content: '✓';
