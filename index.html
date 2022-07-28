@@ -35,7 +35,7 @@
                     </p>
                     <p>
                         <label for="password">password <strong><abbr title="required">*</abbr></strong></label>
-                        <input class="error" type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" onkeyup="check();" required>
+                        <input class="error" type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" onkeyup="check();" required>
                         <span></span>
                     </p>
                 </div>
@@ -60,7 +60,7 @@
             </form>
         </article>
         <article class="bottom">
-            <button class=submit form="my-form" type="submit">Create Account</button>
+            <button class=submit form="my-form" type="submit" disabled>Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
         </article>
     </main>

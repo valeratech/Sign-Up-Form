@@ -157,10 +157,10 @@ input:valid + span::after {
     right: -315px;
 }
 
-input[type=tel] + span::after {
-    font-size: 16px;
+input[type=tel]:invalid + span::after {
+    font-size: 14px;
     position: absolute;
-    content: '(555-555-5555)';
+    content: '(ex. 555-555-5555)';
     padding: 5px 10px;
     top: -78px;
     right: -280px;
