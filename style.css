@@ -71,7 +71,6 @@ header {
 
 }
 
-
 .col-one, .col-two {
     margin-right: 80px;
     margin-top: 30px;
@@ -95,7 +94,6 @@ header {
     padding: 50px;
     background-color: #f6faff;
     margin-top: 1px;
-
 }
 
 form {
@@ -125,16 +123,20 @@ input:focus {
 }
 
 /*input + span {*/
-/*    position: relative;*/
 /*}*/
 
 input:invalid:required {
-    border-color: red;
+    border-color: #e70000;
+    box-shadow: none;
+    
+
 }
 
 input + span {
     position: relative;
 }
+
+
 
 input:valid + span::after {
     font-size: 2.5rem;
@@ -151,8 +153,8 @@ input:valid + span::after {
     position: absolute;
     content: '(optional)';
     padding: 5px 10px;
-    top: 215px;
-    right: 126px;
+    top: 185px;
+    right: 100px;
 }
 
 button {
