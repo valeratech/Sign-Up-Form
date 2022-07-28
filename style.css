@@ -115,7 +115,8 @@ input {
     border-radius: 5px;
     width: 275px;
     height: 35px;
-    font-size: 20px;
+    font-size: 18px;
+    padding: 3px;
 }
 
 input:focus {
@@ -134,29 +135,26 @@ input + span {
     position: relative;
 }
 
-/*input[type=password]:invalid + span {*/
-/*    position: relative;*/
-/*}*/
 
 #password:invalid + span::after {
-    content: "Minimum eight characters, at least one letter and one number";
+    content: "Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character @$!%*?&";
     position: absolute;
     color: red;
     top: 0;
-    right: -400px;
+    right: -750px;
     font-size: .8rem;
-    width: 400px;
+    width: 750px;
 }
 
 
 input:valid + span::after {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     position: absolute;
     content: '✓';
     color: green;
     padding: 5px 10px;
-    top: -70px;
-    right: -330px;
+    top: -60px;
+    right: -315px;
 }
 
 input[type=tel] + span::after {
@@ -177,10 +175,10 @@ button {
     border-radius: 10px;
     border: none;
     margin-bottom: 25px;
+    position: relative;
 }
 
 button:hover {
-    padding: 12px 22px;
     background-color: #ce4388;
 }
 
@@ -188,5 +186,11 @@ button:active {
     background-color: #ff1d95;
     outline: 2px solid #ff1d95;
     outline-offset: 2px;
+}
+
+#message {
+    position: absolute;
+    right: 70px;
+    bottom: 50px;
 }
 
