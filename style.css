@@ -120,6 +120,7 @@ input {
 
 input:focus {
     background-color: aliceblue;
+    box-shadow: 3px 3px 5px #0e0e6f;
 }
 
 /*input + span {*/
@@ -127,9 +128,6 @@ input:focus {
 
 input:invalid:required {
     border-color: #e70000;
-    box-shadow: none;
-    
-
 }
 
 input + span {
